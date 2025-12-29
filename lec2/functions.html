@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abc(){
+        document.write("HIiii, I'm Sarinah!!<br>")
+    }
+    abc();
+
+   ( function(){
+        document.write("Byyyyee!!<br>")
+    })()
+
+    function out(a,b){
+        return a+b;
+    }
+    document.write("Sum Ans: ",out(2,3)," <br>")
+
+    function print(fn , ln){
+        document.write(
+            "<h1>" + fn + " " + ln + "</h1>"
+        )
+    }
+    function add(o , t){
+        document.write(out(o,t)," <br>")
+    }
+    var g = function 
+    (o , t){
+        document.write(out(o,t)," <br>")
+    }
+    var a = `jdfs
+    dlfk
+    dfkfsld
+    dlfl`
+    document.write(a)
+    document.write(g(4,5)) //ony takes pace in console only!!
+    document.write(`hiiiiiii
+    djfhkj
+    sds
+    sdjk`)
+    console.log(a)
+
+    const sum =a=>a*a
+    console.log(sum(10))
+
+    const mul = (a,b)=>`Multiplication is ${a*b}`
+    console.log(mul(2,3))//undefined with paranthesis
+    function ass(a,b,...c){
+        console.log("rest collects")
+    }
+    function xyz(a,b,...c){
+        console.log(a,b,c)
+        console.log(c[0])
+        console.log(c.length)
+        console.log(c.indexOf("abc"))
+        console.log(c.indexOf("par"))
+    }
+    xyz("!","87438","abc","sidi","sdh")
+    console.log()
+</script>
+<body>
+<button onclick="print('sarinah','chudiwala')">Print</button>
+
+<button onclick="add(3,5)">Addd</button>
+
+
+</body>
+</html>
