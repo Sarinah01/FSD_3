@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     let names=["abc" , "xyz","pqr"]
+     var a= names.push("mno")
+     console.log(names)
+     let num = [10,20,30]
+     let mul = num.map(n=> n*2)
+     console.log(mul)
+
+     var b = names.pop()
+     console.log(names)
+     console.log("popped element is: ",b)
+
+     let fill = num.filter(n=>n>=20)
+     console.log(fill)
+
+     console.log(names.includes("abc"))
+     console.log(names.includes("def"))
+     let user= [{name:"sarinah", id:2},{name:'y1', id:2}]
+     let u = user.find(u1=> u1.id==2)
+     let u2 = user.filter(u1=> u1.id==2)
+     console.log(u)
+     console.log(u2) 
+     document.write(JSON.stringify(u))
+</script>
+<body>
+    <!-- push , pop , map , filter
+         for each ,includes, find 
+    -->
+        
+</body>
+</html>
